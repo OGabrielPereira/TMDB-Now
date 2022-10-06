@@ -22,11 +22,11 @@ const Home: NextPage = () => {
         <div className='grid grid-cols-3 gap-4'>
           
           {movies.map((movie) => (
-            
+      
             <div className='flex flex-col items-center'>
               <div className='flex flex-col justify-start'>
-                <Image className='rounded-xl' src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} width={200} height={280} />
-                  <div className='bg-black rounded-xl h-16 '>
+                <Image className='rounded-t-xl' src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`} alt={movie.title} width={300} height={380} />
+                  <div className='bg-black rounded-b-xl h-16 p-4'>
                     <h1 className='text-white font-bold'>{movie.title}</h1>
                     <p className='text-white text-sm'>{movie.release_date}</p>
                   </div>
